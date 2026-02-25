@@ -1,0 +1,9 @@
+# El script detecta automáticamente la API disponible:
+#   - mediapipe < 0.10.14  → usa mp.solutions.face_mesh (legacy)
+#   - mediapipe >= 0.10.14 → usa Tasks API + descarga face_landmarker.task (~8MB)
+#
+# Si prefieres evitar la descarga automática del modelo, instala la versión legacy:
+#   pip install mediapipe==0.10.9
+mediapipe>=0.10.0
+opencv-python>=4.8.0
+numpy>=1.24.0
